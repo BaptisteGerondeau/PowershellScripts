@@ -75,6 +75,7 @@ Function Clear-UserCacheFiles {
     Clear-FirefoxCache
     Clear-EdgeCache
     Clear-DownloadFolder
+    Clear-RecycleBin -Force
 }
 
 #------------------------------------------------------------------#

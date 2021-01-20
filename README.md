@@ -7,3 +7,5 @@ This script, thanks to https://gist.github.com/pmsmith/de573c82a7a2732347377f06d
 - Edge
 - Firefox
 - Chrome
+
+It also empties Windows' cache and the Recycle Bin, as well as wipes out the Download directory.
