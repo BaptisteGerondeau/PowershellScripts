@@ -42,8 +42,8 @@
   <Actions Context="Author">
     <Exec>
       <Command>powershell</Command>
-      <Arguments>-ExecutionPolicy Bypass .\script_session.ps1 -Verbose &gt; log_logoff.txt 2&gt;&amp;1</Arguments>
-      <WorkingDirectory>#TASKPATH#</WorkingDirectory>
+      <Arguments>-ExecutionPolicy Bypass .\script_session.ps1 #DOWNLOADSFOLDERPATH# -Verbose &gt; log_logoff.txt 2&gt;&amp;1</Arguments>
+      <WorkingDirectory>#SCRIPTPATH#</WorkingDirectory>
     </Exec>
   </Actions>
 </Task>

@@ -23,8 +23,8 @@ Function Clear-GlobalWindowsCache {
 #- Clear-DownloadFolder                                            #
 #------------------------------------------------------------------#
 Function Clear-DownloadFolder {
-    param([string]$user=$env:USERNAME)
-    Remove-CacheFiles "C:\users\$user\Downloads"
+    param([string]$downloads="C:\users\$env:USERNAME\Downloads)
+    Remove-CacheFiles "$downloads"
 }
 
 #------------------------------------------------------------------#
@@ -74,8 +74,7 @@ Function Clear-UserCacheFiles {
     Clear-ChromeCache
     Clear-FirefoxCache
     Clear-EdgeCache
-    Clear-DownloadFolder
-    Clear-RecycleBin -Force
+    Clear-DownloadFolder $args[0]
 }
 
 #------------------------------------------------------------------#
